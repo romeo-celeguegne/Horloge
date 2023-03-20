@@ -7,7 +7,7 @@ from datetime import datetime
 def heure_actuelle():  # afficher l'heure actuelle
     while True:  # tant que rien ne stop la boucle, rajouter une seconde
         heure = str(datetime.now().time())
-        heure = heure[:-7]
+        heure = heure[:7]
         print(heure)
         time.sleep(1)
 
@@ -63,6 +63,7 @@ def alarme():  # définir une alarme
         else:
             time.sleep(1)
 
-# heure_actuelle()
+
+heure_actuelle()
 # afficher_heure()
 # alarme()
